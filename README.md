@@ -1,5 +1,5 @@
 # xfce4-panel-alsa-plugin
-This is simle alsa plugin for xfce4-panel written on C using GTK3 library. Written and tested in Debian 9 32/64 bit.
+This is simle alsa plugin for xfce4-panel written on C using GTK3 library. Written and tested in Debian 9 32/64 bit. Based on ALSA Tray project source code https://projects.flogisoft.com/alsa-tray/
 ## compilation
 gcc -shared -Wall -fPIC -o libalsa-plugin.so alsa-plugin.c \`pkg-config --cflags --libs libxfce4panel-2.0\` \`pkg-config --cflags --libs alsa\`
 ## dependencies
@@ -13,3 +13,10 @@ gcc -shared -Wall -fPIC -o libalsa-plugin.so alsa-plugin.c \`pkg-config --cflags
 ## debug info
 - xfce4-panel -q
 - PANEL_DEBUG=1 xfce4-panel
+## known bugs
+- tool tips not used
+- "mute/unmute" not used
+- mouse wheel not working on panel button
+- panel must be placed on bottom only
+- program read volume level from FRONT_LEFT channel only
+- program set volume level in 2 channels FRONT_LEFT and FRONT_RIGHT only

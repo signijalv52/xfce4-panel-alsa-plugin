@@ -20,3 +20,6 @@ gcc -shared -Wall -fPIC -o libalsa-plugin.so alsa-plugin.c \`pkg-config --cflags
 - panel must be placed on bottom only
 - program read volume level from FRONT_LEFT channel only
 - program set volume level in 2 channels FRONT_LEFT and FRONT_RIGHT only
+## tuning
+you can playing with global variables CARD, CONTROL_NAME for using your alsa options
+and SLIDER_HEIGHT, SLIDER_WIDTH for slider window size

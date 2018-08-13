@@ -2,7 +2,7 @@
 This is simle alsa plugin for xfce4-panel written on C using GTK3 library. Based on ALSA Tray project source code https://projects.flogisoft.com/alsa-tray/
 ## required
 written and tested using:
-- Debian GNU/Linux 9.4
+- Debian GNU/Linux 9.4 (x86 or x86-64)
 - xfce4-panel 4.12.1-2
 ## compilation
 gcc -shared -Wall -fPIC -o libalsa-plugin.so alsa-plugin.c \`pkg-config --cflags --libs libxfce4panel-2.0\` \`pkg-config --cflags --libs alsa\`

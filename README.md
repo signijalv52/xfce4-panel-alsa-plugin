@@ -1,5 +1,5 @@
 # xfce4-panel-alsa-plugin
-This is simle xfce4-panel mixer plugin for alsa written on C using GTK3 library. Based on ALSA Tray project source code https://projects.flogisoft.com/alsa-tray/
+This is simple xfce4-panel mixer plugin for alsa written on C using GTK3 library. Based on ALSA Tray project source code https://projects.flogisoft.com/alsa-tray/
 ## required
 written and tested using:
 - Debian GNU/Linux 9.4 (x86 or x86-64)

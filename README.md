@@ -19,7 +19,6 @@ gcc -shared -Wall -fPIC -o libalsa-plugin.so alsa-plugin.c \`pkg-config --cflags
 - PANEL_DEBUG=1 xfce4-panel
 ## known bugs
 - tool tips not used
-- "mute/unmute" not used
 - mouse wheel not working on panel button
 - panel must be placed on bottom only
 - program read volume level from FRONT_LEFT channel only

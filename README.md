@@ -13,6 +13,7 @@ gcc -shared -Wall -fPIC -o libalsa-plugin.so alsa-plugin.c \`pkg-config --cflags
 ## installation
 - sudo cp libalsa-plugin.so /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libalsa-plugin.so
 - sudo cp alsa-plugin.desktop /usr/share/xfce4/panel/plugins/alsa-plugin.desktop
+- sudo chmod -x /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libalsa-plugin.so
 ## debug info
 - xfce4-panel -q
 - PANEL_DEBUG=1 xfce4-panel

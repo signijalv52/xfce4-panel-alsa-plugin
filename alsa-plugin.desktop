@@ -1,0 +1,11 @@
+[Xfce Panel]
+Type=X-XFCE-PanelPlugin
+Encoding=UTF-8
+Name=alsa-plugin
+Comment=alsa-plugin
+Icon=multimedia-volume-control
+X-XFCE-Module=alsa-plugin
+X-XFCE-Module-Path=/usr/lib/xfce4/panel/plugins
+X-XFCE-Internal=TRUE
+X-XFCE-Unique=TRUE
+X-XFCE-API=2.0

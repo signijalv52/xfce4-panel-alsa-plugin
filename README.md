@@ -2,21 +2,20 @@
 This is simple xfce4-panel mixer plugin for alsa written on C using GTK3 library. Based on ALSA Tray project source code https://projects.flogisoft.com/alsa-tray/
 ## required
 written and tested using:
-- Debian GNU/Linux 10 amd64
-- xfce4-panel 4.12.2
+- ArchLinux 2021-09-10
 ## compilation
 gcc -shared -Wall -fPIC -o libalsa-plugin.so alsa-plugin.c \`pkg-config --cflags --libs libxfce4panel-2.0\` \`pkg-config --cflags --libs alsa\`
 ## build dependencies
-- libxfce4panel-2.0-dev
-- libasound2-dev
-- volumeicon-alsa
+- base-devel
+- xfce4-panel
+- alsa-lib
+- volumeicon
 ## installation
-- sudo cp libalsa-plugin.so /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libalsa-plugin.so
+- sudo cp libalsa-plugin.so /usr/lib/xfce4/panel/plugins/libalsa-plugin.so
 - sudo cp alsa-plugin.desktop /usr/share/xfce4/panel/plugins/alsa-plugin.desktop
-- sudo chmod -x /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libalsa-plugin.so
+- sudo chmod -x /usr/lib/xfce4/panel/plugins/libalsa-plugin.so
 ## debug info
-- xfce4-panel -q
-- PANEL_DEBUG=1 xfce4-panel
+- xfce4-panel -q && PANEL_DEBUG=1 xfce4-panel
 ## known bugs
 - tool tips not used
 - mouse wheel not working on panel button
